@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Us</title>
+    <link rel="stylesheet" href="Book.css">
+
+    <!--FOR ICONS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Include Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Oswald:500|Quicksand:400,500" rel="stylesheet">
+</head>
+
+<body>
+    <!--NAVBAR-->
+    <div class="topnav" id="myTopnav">
+        <a href="index.html" class="btn btn-link">Home</a>
+        <a href="index.html#services" class="btn btn-link">Services</a>
+        <a href="index.html#about" class="btn btn-link">Why Us?</a>
+        <a href="index.html#About-Us" class="btn btn-link">About Us</a>
+        <a href="index.html#footer" class="btn btn-link">Contact Us</a>
+        <a href="Book.html" class="btn btn-link">Book Us</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <!--This is for the navbar to collapse into the icon and create responsivness-->
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += "responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+
+    <div class="container">
+        <h1 class="title">Contact Us</h1>
+        <form action="">
+            <div class="row">
+                <div class="col-25">
+                    <label for="fname">First Name</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="lname">Last Name</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="date">Date</label>
+                </div>
+                <div class="col-75">
+                    <input type="date" id="date" name="Date">
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-25 ">
+                    <label for="time ">Pick a time</label>
+                </div>
+                <div class="col-75 ">
+                    <input type="time" id="time " name="time">
+                </div>
+            </div>
+            <div class=" row ">
+                <div class="col-25 ">
+                    <label for="Services ">Service</label>
+                </div>
+                <div class="col-75 ">
+                    <select id="Services " name="Services ">
+          <option value="Drain Cleaning ">Drain Cleaning</option>
+          <option value="Plumbing Repairs ">Plumbing Repairs</option>
+          <option value="Sewer Line Repair ">Sewer Line Repair</option>
+          <option value="Emergency Plumbing ">Emergency Plumbing</option>
+        </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="subject">How can we help?</label>
+                </div>
+                <div class="col-75">
+                    <textarea id="subject" name="subject" placeholder="Write about how we can help.. " style="height:200px "></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+    <footer id="footer " class="footer ">
+        <div class="footer__addr ">
+            <h1 class="footer__logo ">Missisauga Plumbing</h1>
+
+            <h2>Contact</h2>
+
+            <address>
+            5534 erin mills drive, Missisauga, Ontario<br>
+                
+            <a class="footer__btn " href="mailto:example@gmail.com ">Email Us</a>
+          </address>
+        </div>
+
+        <ul class="footer__nav ">
+
+
+            <li class="nav__item nav__item--extra ">
+                <h2 class="nav__title ">Quick Links</h2>
+
+                <ul class="nav__ul nav__ul--extra ">
+                    <li>
+                        <a href="#services ">Services</a>
+                    </li>
+
+                    <li>
+                        <a href="#about ">Why Us?</a>
+                    </li>
+
+                    <li>
+                        <a href="#home ">Home Page</a>
+                    </li>
+
+                    <li>
+                        <a href="#footer ">Contact Us</a>
+                    </li>
+
+                    <li>
+                        <a href="#Book ">Book Us</a>
+                    </li>
+
+                    <li>
+                        <a href="# ">Biography</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="nav__item ">
+                <h2 class="nav__title ">Follow Us</h2>
+
+                <ul class="nav__ul ">
+                    <li>
+                        <a href="# ">Twitter</a>
+                    </li>
+
+                    <li>
+                        <a href="# ">Instagram</a>
+                    </li>
+
+                    <li>
+                        <a href="# ">Facebook</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </footer>
+</body>
+
+</html>

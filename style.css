@@ -75,6 +75,10 @@ body {
     overflow-x: hidden;
 }
 
+section {
+    border-top: 1px solid #e5e5e5;
+}
+
 
 /* this is so when the screen minimizes the background lowers its opacity so the text is easier to read*/
 
@@ -173,6 +177,7 @@ body {
     border-radius: 30px;
     cursor: pointer;
     position: relative;
+    text-decoration: none;
 }
 
 button::before,
@@ -198,6 +203,11 @@ button::after {
 
 .Hero-Btn:hover:after {
     width: 100%;
+}
+
+.Hero-Btn a {
+    text-decoration: none;
+    color: initial;
 }
 
 
@@ -312,6 +322,7 @@ button::after {
     letter-spacing: 0px;
     text-align: center;
     font-family: "Oswald", sans-serif;
+    margin-top: 30px;
 }
 
 .section-paragraph {
@@ -728,5 +739,76 @@ button::after {
     78%,
     97% {
         opacity: 1;
+    }
+}
+
+
+/* About us section */
+
+.about-section {
+    background: url(./images/plumb.jpg) no-repeat left;
+    background-size: 100%;
+    background-color: #fdfdfd;
+    overflow: hidden;
+    padding: 100px 0;
+}
+
+.inner-container {
+    width: 55%;
+    float: right;
+    background-color: #fdfdfd;
+    padding: 150px;
+}
+
+.heeabout {
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.heaabout {
+    margin-bottom: 30px;
+    margin-top: 30px;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.text {
+    font-size: 13px;
+    color: #545454;
+    line-height: 30px;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.text-2 {
+    font-size: 13px;
+    color: #545454;
+    line-height: 30px;
+    text-align: justify;
+}
+
+@media screen and (max-width:1200px) {
+    .inner-container {
+        padding: 80px;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .about-section {
+        background-size: 100%;
+        padding: 100px 40px;
+    }
+    .inner-container {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .about-section {
+        padding: 0;
+    }
+    .inner-container {
+        padding: 60px;
     }
 }
